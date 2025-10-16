@@ -44,7 +44,7 @@
                   data-caption="{{ .caption }}"
                 >
                 {{ with .caption }}
-                <figcaption class="mt-2 text-muted small" style="text-align:center; margin-bottom:0.25rem;">
+                <figcaption class="mt-2 text-muted small" style="text-align:center;">
                   {{ . }}
                 </figcaption>
                 {{ end }}
@@ -70,55 +70,43 @@
   <style>
     /* Pagination below caption */
     .hero-splide .splide__pagination {
-      margin-top: -0.8rem;
+      margin-top: -1rem;
       position: relative;
     }
 
-    /* Fixed height for desktop images */
+    /* Fixed height for images */
     .hero-slide-image {
       width: 100%;
-      height: 375px;
+      height: 375px; /* keep fixed height */
       object-fit: cover;
-      border-radius: 0.75rem;
     }
 
-    /* Arrows at image borders and slightly raised */
+    /* Make sure images scale down on small screens */
+    @media (max-width: 768px) {
+      .hero-slide-image {
+        max-height: 375px; /* keeps height from stretching */
+        width: 100%;
+      }
+    }
+
+    /* Arrows at image borders and vertically centered */
     .hero-splide .splide__arrow {
-      top: 42%;
+      top: 45%;
       transform: translateY(-50%);
       width: 1.5rem;
       height: 1.5rem;
-      background-color: rgba(78, 72, 72, 0.55);
+      background-color: rgba(78, 72, 72, 0.547);
       border-radius: 50%;
       color: white;
       font-size: 1.2rem;
     }
 
     .hero-splide .splide__arrow--prev {
-      left: 0.3rem;
+      left: 0.1rem;
     }
 
     .hero-splide .splide__arrow--next {
-      right: 0.3rem;
-    }
-
-    /* Mobile adjustments */
-    @media (max-width: 768px) {
-      .hero-slide-image {
-        height: auto;       /* remove fixed height */
-        max-height: 75vh;   /* fit viewport */
-        object-fit: contain; /* show full photo */
-      }
-
-      /* Raise arrows slightly more for small screens */
-      .hero-splide .splide__arrow {
-        top: 38%;
-      }
-
-      /* Bring pagination dots closer to caption on mobile */
-      .hero-splide .splide__pagination {
-        margin-top: -1.2rem;
-      }
+      right: 0.1rem;
     }
   </style>
 
