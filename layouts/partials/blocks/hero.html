@@ -44,7 +44,7 @@
                   data-caption="{{ .caption }}"
                 >
                 {{ with .caption }}
-                <figcaption class="mt-2 text-muted small" style="text-align:center;">
+                <figcaption class="mt-2 text-muted small text-center">
                   {{ . }}
                 </figcaption>
                 {{ end }}
@@ -77,15 +77,41 @@
     /* Fixed height for images */
     .hero-slide-image {
       width: 100%;
-      height: 375px; /* keep fixed height */
+      height: 375px;
       object-fit: cover;
     }
 
-    /* Make sure images scale down on small screens */
+    /* Mobile adjustments */
     @media (max-width: 768px) {
       .hero-slide-image {
-        max-height: 375px; /* keeps height from stretching */
-        width: 100%;
+        height: auto;       /* allow natural scaling */
+        max-height: 300px;  /* optional max height for very tall images */
+      }
+
+      /* Stack text and image nicely */
+      .col-12.col-md-6 {
+        margin-top: 0 !important;
+      }
+
+      /* Reduce arrow size and reposition */
+      .hero-splide .splide__arrow {
+        top: 40%;
+        width: 1.2rem;
+        height: 1.2rem;
+        font-size: 1rem;
+      }
+
+      .hero-splide .splide__arrow--prev {
+        left: 0.2rem;
+      }
+
+      .hero-splide .splide__arrow--next {
+        right: 0.2rem;
+      }
+
+      /* Reduce caption font */
+      .hero-splide figcaption {
+        font-size: 0.8rem;
       }
     }
 
@@ -95,7 +121,7 @@
       transform: translateY(-50%);
       width: 1.5rem;
       height: 1.5rem;
-      background-color: rgba(78, 72, 72, 0.547);
+      background-color: rgba(78, 72, 72, 0.55);
       border-radius: 50%;
       color: white;
       font-size: 1.2rem;
