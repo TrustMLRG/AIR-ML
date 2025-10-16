@@ -70,43 +70,49 @@
   <style>
     /* Pagination below caption */
     .hero-splide .splide__pagination {
-      margin-top: -1.1rem;
+      margin-top: -1.0rem;
       position: relative;
     }
 
-    /* Fixed height for images */
+    /* Default desktop image styling */
     .hero-slide-image {
       width: 100%;
-      height: 375px; /* keep fixed height */
+      height: 375px; /* fixed for desktop */
       object-fit: cover;
+      border-radius: 0.75rem;
     }
 
-    /* Make sure images scale down on small screens */
+    /* Responsive images on small screens */
     @media (max-width: 768px) {
       .hero-slide-image {
-        max-height: 375px; /* keeps height from stretching */
-        width: 100%;
+        height: auto;       /* remove fixed height */
+        max-height: 75vh;   /* prevent it from being too tall */
+        object-fit: contain; /* keep the entire photo visible */
+      }
+
+      .hero-splide .splide__arrow {
+        top: 38%; /* slightly higher for smaller screens */
       }
     }
 
     /* Arrows at image borders and vertically centered */
     .hero-splide .splide__arrow {
-      top: 42%;
+      top: 42%; /* slightly higher than center */
       transform: translateY(-50%);
       width: 1.5rem;
       height: 1.5rem;
-      background-color: rgba(78, 72, 72, 0.547);
+      background-color: rgba(78, 72, 72, 0.55);
       border-radius: 50%;
       color: white;
       font-size: 1.2rem;
     }
 
     .hero-splide .splide__arrow--prev {
-      left: 0.1rem;
+      left: 0.3rem;
     }
 
     .hero-splide .splide__arrow--next {
-      right: 0.1rem;
+      right: 0.3rem;
     }
   </style>
 
