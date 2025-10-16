@@ -2,12 +2,11 @@ name: Deploy Hugo Website to GitHub Pages
 
 env:
   WC_HUGO_VERSION: '0.135.0'
-  BASE_URL: 'https://TrustMLRG.github.io/AIR-ML/'  # <-- fixed for GitHub Pages
 
 on:
   push:
-    branches: ["main"]
-  workflow_dispatch:
+    branches: ["main"]      # Trigger on pushes to main
+  workflow_dispatch:         # Allow manual trigger
 
 permissions:
   contents: read
@@ -22,17 +21,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      # 1️⃣ Checkout repo
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
-          fetch-depth: 0
+          fetch-depth: 0       # Needed for Git info
 
+      # 2️⃣ Setup Hugo
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: ${{ env.WC_HUGO_VERSION }}
           extended: true
 
+      # 3️⃣ Cache Hugo modules
       - name: Cache Hugo modules
         uses: actions/cache@v4
         with:
@@ -41,18 +43,21 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugomod-
 
+      # 4️⃣ Setup Pages
       - name: Configure GitHub Pages
         id: pages
         uses: actions/configure-pages@v5
         with:
-          enablement: auto
+          enablement: auto   # <-- automatically create/configure GitHub Pages site
 
+      # 5️⃣ Build site
       - name: Build Hugo site
         env:
           HUGO_ENVIRONMENT: production
         run: |
-          hugo --minify --baseURL "${{ env.BASE_URL }}"
+          hugo --minify --baseURL "${{ steps.pages.outputs.base_url }}/"
 
+      # 6️⃣ Upload built site
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
@@ -63,7 +68,9 @@ jobs:
     needs: build
     environment:
       name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
     steps:
+      # 7️⃣ Deploy the site
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
