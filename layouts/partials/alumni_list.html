@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Prevent mobile browsers from auto-linking numbers -->
+    <meta name="format-detection" content="telephone=no">
+    <title>Alumni</title>
+    <style>
+        /* Full-width grey background that escapes container */
+        .alumni-fullwidth-block {
+            position: relative;
+            left: 50%;
+            right: 50%;
+            margin-left: -50vw;
+            margin-right: -50vw;
+            width: 100vw;
+            background-color: #f0f0f0;
+            padding: 2rem 0 3rem 0; /* Reduced top padding, keep bottom padding */
+            margin-top: 3rem; /* space above the grey block */
+        }
+
+        /* Inner container to constrain content */
+        .alumni-content-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Section titles */
+        .alumni-title {
+            font-size: 2rem;
+            text-align: left;
+            font-weight: 500;
+            margin-bottom: 1rem;
+        }
+
+        /* Lists with bullets */
+        .alumni-list {
+            list-style-type: disc;
+            padding-left: 2rem;
+            margin-bottom: 2rem;
+            font-size: 1rem;
+        }
+
+        .alumni-list li {
+            margin-bottom: 0.75rem;
+            line-height: 1.4;
+        }
+
+        /* Prevent tel link styling on mobile */
+        .no-tel {
+            -webkit-touch-callout: none;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .alumni-title {
+                font-size: 2rem;
+            }
+            .alumni-list {
+                font-size: 1rem;
+                padding-left: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="alumni-fullwidth-block">
+        <div class="alumni-content-container">
+            <h2 class="alumni-title mt-5">Affiliated Students</h2>
+            <ul class="alumni-list">
+                <li>
+                    <a href="https://minxingzhang.github.io/" target="_blank" rel="noopener noreferrer">Minxing Zhang</a>, 
+                    PhD researcher at CISPA, 
+                    co-advised with <a href="https://cispa.de/de/people/backes" target="_blank" rel="noopener noreferrer">Michael Backes</a>
+                </li>
+                <li>
+                    <a href="https://applexy.github.io/" target="_blank" rel="noopener noreferrer">Yuan Xin</a>, 
+                    PhD researcher at CISPA, 
+                    co-advised with <a href="https://cispa.de/de/people/backes" target="_blank" rel="noopener noreferrer">Michael Backes</a>
+                </li>
+                <li>
+                    <a href="https://cispa.de/de/people/rui.ye" target="_blank" rel="noopener noreferrer">Rui Ye</a>, 
+                    PhD researcher at CISPA, 
+                    co-advised with <a href="https://cispa.de/de/people/backes" target="_blank" rel="noopener noreferrer">Michael Backes</a>
+                </li>
+                <li>
+                    <a href="https://jasonfu1998.github.io/" target="_blank" rel="noopener noreferrer">Jia Fu</a>, 
+                    externally supervised PhD at <a href="https://www.ri.se/en" target="_blank" rel="noopener noreferrer">RISE Research Institutes of Sweden</a>
+                </li>
+            </ul>
+
+            <h2 class="alumni-title mt-5">Alumni</h2>
+            <ul class="alumni-list">
+                <li>Somrita Ghosh, research assistant, <span class="no-tel">06/2023 - 02/2025</span></li>
+                <li>Wenshu Fan, visiting PhD student, <span class="no-tel">03/2023 - 12/2024</span></li>
+                <li>Raj Mohan Tumarada, research assistant, <span class="no-tel">08/2023 - 09/2024</span> — now an Applied R&D Engineer at Nokia</li>
+                <li>Umang Agarwal, intern, <span class="no-tel">01/2024 - 12/2024</span> — now a PhD student at <a href="https://www.nus.edu.sg/" target="_blank" rel="noopener noreferrer">NUS</a></li>
+                <li>Zhizhen Chen, intern, <span class="no-tel">04/2024 - 11/2024</span> — now a PhD student at <a href="https://www.virginia.edu/" target="_blank" rel="noopener noreferrer">UVa</a></li>
+                <li>Carlo Saccardi, intern, <span class="no-tel">09/2023 - 04/2024</span> — now a PhD student at <a href="https://www.tudelft.nl/" target="_blank" rel="noopener noreferrer">TU Delft</a></li>
+                <li>Mohammad Javad Maheronnaghsh, intern, <span class="no-tel">07/2023 - 12/2023</span> — now a graduate student at <a href="https://www.utoronto.ca/" target="_blank" rel="noopener noreferrer">University of Toronto</a></li>
+                <li>Arash Akbari, intern, <span class="no-tel">08/2023 - 09/2023</span> — now a PhD student at <a href="https://www.northeastern.edu/" target="_blank" rel="noopener noreferrer">Northeastern University</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

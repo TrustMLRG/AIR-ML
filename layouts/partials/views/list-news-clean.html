@@ -1,0 +1,65 @@
+{{ $item := .item }}
+
+<div class="view-list view-list-item">
+  <span class="article-item">
+    <strong class="article-date">[{{ $item.Date.Format "Jan 2006" }}]</strong>{{ $item.Title }}
+  </span>
+</div>
+
+<style>
+/* News item container */
+.view-list-item {
+  font-size: 1.15rem;
+  line-height: 1.5;
+  margin-bottom: 1em; /* space between items */
+}
+
+/* Hanging indent layout for desktop/tablet */
+.article-item {
+  display: block;
+  padding-left: 150px;    /* space reserved for the date */
+  text-indent: -172px;    /* pulls the date into left margin */
+  line-height: 1.5;
+}
+
+/* Date styling */
+.article-date {
+  display: inline-block;
+  width: 150px;           /* fixed width for all dates */
+  margin-right: 0.8em;    /* space between date and text */
+  text-align: right;
+  white-space: nowrap;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Tablet adjustments */
+@media (max-width: 768px) {
+  .article-item {
+    padding-left: 100px;
+    text-indent: -100px;
+    font-size: 1rem;
+  }
+  .article-date {
+    width: 90px;
+    margin-right: 0.5em;
+  }
+}
+
+/* Mobile adjustments: stacked layout */
+@media (max-width: 480px) {
+  .article-item {
+    display: block;
+    padding-left: 0;
+    text-indent: 0;
+    font-size: 0.95rem;
+  }
+  .article-date {
+    display: block;
+    width: auto;
+    margin-right: 0;
+    margin-bottom: 0.25em;  /* space below date */
+    text-align: left;
+  }
+}
+</style>

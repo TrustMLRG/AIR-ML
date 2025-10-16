@@ -1,0 +1,17 @@
+{{- define "main" -}}
+
+{{ partial "page_header.html" . }}
+
+<div class="universal-wrapper">
+  {{ with .Content }}
+  <div class="article-style">{{ . }}</div>
+  {{ end }}
+
+  {{ $paginator := .Paginate .Data.Pages }}
+  {{ range $index, $item := $paginator.Pages }}
+    <p><strong>[{{ $item.Date.Format "Jan 2006" }}]</strong> {{ $item.Title }}</p>
+  {{ end }}
+
+  {{ partial "pagination" . }}
+</div>
+{{- end -}}

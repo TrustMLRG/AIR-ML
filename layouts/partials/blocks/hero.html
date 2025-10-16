@@ -1,0 +1,136 @@
+{{/* Hero Block: Description Left + Image Right, Image Raised, Pagination Below Caption, No Shadow, Sorted by Date */}}
+{{ $page := .wcPage }}
+{{ $block := .wcBlock }}
+{{ $bg := $block.design.background }}
+
+<div class="container">
+
+  {{/* Hero title */}}
+  {{ with $block.content.title }}
+  <div class="row justify-content-center text-center mb-4">
+    <div class="col-12 col-md-8">
+      <h1 class="hero-title">{{ . | markdownify }}</h1>
+    </div>
+  </div>
+  {{ end }}
+
+  {{/* Two-column layout */}}
+  <div class="row align-items-start g-4">
+
+    {{/* Left column: description */}}
+    <div class="col-12 col-md-6" style="margin-top: -1.5rem;">
+      {{ with $block.content.text }}
+        <div class="hero-lead mb-3">{{ . | $page.RenderString | emojify }}</div>
+      {{ end }}
+    </div>
+
+    {{/* Right column: image slider */}}
+    <div class="col-12 col-md-6 d-flex align-items-center justify-content-center" style="margin-top: 1.0rem;">
+      {{ with $block.content.images }}
+      {{ $sortedImages := sort . "date" "desc" }}
+      <div class="splide hero-splide w-100 position-relative">
+        <div class="splide__track">
+          <ul class="splide__list">
+            {{ range $sortedImages }}
+            <li class="splide__slide text-center">
+              <figure style="margin:0; width:100%;">
+                <img 
+                  src="media/{{ .filename }}" 
+                  class="img-fluid rounded hero-slide-image"
+                  loading="lazy"
+                  alt="{{ .caption }}"
+                  data-src="media/{{ .filename }}"
+                  data-fancybox="gallery"
+                  data-caption="{{ .caption }}"
+                >
+                {{ with .caption }}
+                <figcaption class="mt-2 text-muted small" style="text-align:center;">
+                  {{ . }}
+                </figcaption>
+                {{ end }}
+              </figure>
+            </li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+
+  </div>
+
+  {{/* Include Splide & Fancybox JS/CSS */}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script>
+  
+  {{/* Custom CSS */}}
+  <style>
+    /* Pagination below caption */
+    .hero-splide .splide__pagination {
+      margin-top: -1rem;
+      position: relative;
+    }
+
+    /* Fixed height for images */
+    .hero-slide-image {
+      width: 100%;
+      height: 375px; /* keep fixed height */
+      object-fit: cover;
+    }
+
+    /* Make sure images scale down on small screens */
+    @media (max-width: 768px) {
+      .hero-slide-image {
+        max-height: 375px; /* keeps height from stretching */
+        width: 100%;
+      }
+    }
+
+    /* Arrows at image borders and vertically centered */
+    .hero-splide .splide__arrow {
+      top: 45%;
+      transform: translateY(-50%);
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: rgba(78, 72, 72, 0.547);
+      border-radius: 50%;
+      color: white;
+      font-size: 1.2rem;
+    }
+
+    .hero-splide .splide__arrow--prev {
+      left: 0.1rem;
+    }
+
+    .hero-splide .splide__arrow--next {
+      right: 0.1rem;
+    }
+  </style>
+
+  {{/* Initialize Splide & Fancybox */}}
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      new Splide('.hero-splide', {
+        type: 'loop',
+        autoplay: true,
+        interval: 4500,
+        pauseOnHover: true,
+        perPage: 1,
+        speed: 800,
+        arrows: true,
+        pagination: true,
+      }).mount();
+
+      Fancybox.bind('[data-fancybox="gallery"]', {
+        Thumbs: false,
+        Toolbar: true,
+        closeButton: "top",
+        infinite: true
+      });
+    });
+  </script>
+
+</div>

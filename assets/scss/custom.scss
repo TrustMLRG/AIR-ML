@@ -1,0 +1,51 @@
+.navbar-title {
+  font-size: 1.25rem;  /* Adjust size */
+  font-weight: 600;     /* Medium */
+  color: inherit;       /* Inherit navbar color */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-title {
+  text-align: center;
+  font-size: 2rem;  /* Adjust size */
+  font-weight: 600;     /* Medium */
+  color: inherit;       /* Inherit navbar color */
+  font-family: 'Montserrat', sans-serif;
+}
+
+.hero-lead {
+  font-size: 1.2rem;  /* Adjust size */
+}
+
+.universal-wrapper p {
+  margin-bottom: 0.6em;
+}
+
+// Reduce top margin and add bottom margin for powered-by in the footer
+.site-footer {
+  .powered-by {
+    margin-top: 0rem;   // smaller space above
+    margin-bottom: 1.5rem; // extra space below
+    font-size: 1rem;
+  }
+}
+
+.wg-markdown .cta-group .btn {
+  font-size: 1.1rem;     // increase text size
+  font-weight: 400;      // optional: make it bolder
+  padding: 1rem 2rem;    // optional: adjust padding for bigger button
+}
+
+.avatar {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.hero-slide-image {
+  width: 100%;
+  height: auto; /* let height adjust automatically */
+  max-height: 400px; /* optional: limit tallest image */
+  object-fit: cover;
+  display: block;
+}
