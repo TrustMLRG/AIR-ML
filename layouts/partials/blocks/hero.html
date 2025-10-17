@@ -39,7 +39,6 @@
                   class="img-fluid rounded hero-slide-image"
                   loading="lazy"
                   alt="{{ .caption }}"
-                  data-src="media/{{ .filename }}"
                   data-fancybox="gallery"
                   data-caption="{{ .caption }}"
                 >
@@ -83,19 +82,16 @@
 
     /* Mobile & tablet adjustments */
     @media (max-width: 992px) {
-      /* Keep all images same height on tablets and below */
       .hero-slide-image {
         width: 100%;
-        height: 250px; /* consistent height for mobile images */
+        height: 250px;
         object-fit: cover;
       }
 
-      /* Stack text and image nicely */
       .col-12.col-md-6 {
         margin-top: 0 !important;
       }
 
-      /* Reduce arrow size */
       .hero-splide .splide__arrow {
         top: 40%;
         width: 1.2rem;
@@ -111,7 +107,6 @@
         right: 0.2rem;
       }
 
-      /* Reduce caption font */
       .hero-splide figcaption {
         font-size: 0.8rem;
       }
