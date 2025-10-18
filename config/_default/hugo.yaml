@@ -4,7 +4,7 @@
 # This file is formatted using YAML syntax - learn more at https://learnxinyminutes.com/docs/yaml/
 
 title: AIR-ML  # Website name
-baseURL: 'https://TrustMLRG.github.io/AIR-ML/' # Website URL
+baseURL: 'https://air-ml.org/' # Website URL
 
 ############################
 ## LANGUAGE

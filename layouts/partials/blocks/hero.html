@@ -80,15 +80,21 @@
       object-fit: cover;
     }
 
+    /* Ensure right column aligns vertically with left column on all screens */
+    .hero-splide {
+      margin-top: 0 !important;
+    }
+
     /* Mobile & tablet adjustments */
     @media (max-width: 992px) {
       .hero-slide-image {
-        width: 100%;
         height: 250px;
-        object-fit: cover;
       }
 
-      .col-12.col-md-6 {
+      /* Remove top margin from both columns */
+      .col-12.col-md-6,
+      .col-12.col-md-6.d-flex.align-items-center.justify-content-center,
+      .hero-splide {
         margin-top: 0 !important;
       }
 
@@ -151,7 +157,8 @@
         Thumbs: false,
         Toolbar: true,
         closeButton: "top",
-        infinite: true
+        infinite: true,
+        keyboard: true
       });
     });
   </script>
