@@ -1,5 +1,5 @@
 ---
-title: "Our paper (DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy) has been awarded the Distinguished Paper Award at CCS 2025!"
+title: "Our paper (DivTrackee versus DynTracker: Promoting Diversity in Anti-Facial Recognition against Dynamic FR Strategy) has been awarded the Distinguished Paper Award 🏆 at CCS 2025!"
 
 date: 2025-10-16
 # excerpt: "We enjoyed a productive and fun group retreat at Saarschleife."
