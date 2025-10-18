@@ -33,7 +33,7 @@ publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
 publication: The ACM Conference on Computer and Communications Security
-publication_short: CCS 2025
+publication_short: CCS 2025 (Distinguished Paper Award)
 
 abstract: The widespread adoption of facial recognition (FR) models raises serious concerns about their potential misuse, motivating the development of anti-facial recognition (AFR) to protect user facial privacy. In this paper, we argue that the static FR strategy, predominantly adopted in prior literature for evaluating AFR efficacy, cannot faithfully characterize the actual capabilities of determined trackers who aim to track a specific target identity. In particular, we introduce DynTracker, a dynamic FR strategy where the model's gallery database is iteratively updated with newly recognized target identity images. Surprisingly, such a simple approach renders all the existing AFR protections ineffective. To mitigate the privacy threats posed by DynTracker, we advocate for explicitly promoting diversity in the AFR-protected images. We hypothesize that the lack of diversity is the primary cause of the failure of existing AFR methods. Specifically, we develop DivTrackee, a novel method for crafting diverse AFR protections that builds upon a text-guided image generation framework and diversity-promoting adversarial losses. Through comprehensive experiments on various facial image benchmarks and feature extractors, we demonstrate DynTracker's strength in breaking existing AFR methods and the superiority of DivTrackee in preventing user facial images from being identified by dynamic FR strategies. We believe our work can act as an important initial step towards developing more effective AFR methods for protecting user facial privacy against determined trackers.
 
@@ -88,6 +88,8 @@ projects:
 #   Otherwise, set `slides: ""`.
 # slides: example
 ---
+
+This paper has been awarded the [Distinguished Paper Award at CCS 2025](https://www.sigsac.org/ccs/CCS2025/awards/)! Congratulations to Wenshu, Minxing, and all the co-authors"
 
 <!-- {{% callout note %}}
 Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
