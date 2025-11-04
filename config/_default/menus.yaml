@@ -16,8 +16,8 @@ main:
   - name: Team
     url: team
     weight: 30
-  # - name: Events
-  #   url: event
+  # - name: Project
+  #   url: project
   #   weight: 40
   - name: Publication
     url: publication
