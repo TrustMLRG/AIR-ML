@@ -11,7 +11,7 @@ sections:
          AIR-ML Lab @ CISPA
       images:
         - filename: subrat_poster_iccv_2025.jpeg
-          caption: Subrat presenting our poster at ICCV 2025 (Oct 2025)
+          caption: Subrat presenting our poster at ICCV (Oct 2025)
           date: "2025-10-22"
         - filename: group_retreat_2025_treetop.jpg
           caption: Group Retreat at Treetop Saarschleife (Sep 2025)
