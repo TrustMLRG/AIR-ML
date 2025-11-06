@@ -16,9 +16,9 @@ main:
   - name: Team
     url: team
     weight: 30
-  # - name: Project
-  #   url: project
-  #   weight: 40
+  - name: Project
+    url: project
+    weight: 40
   - name: Publication
     url: publication
     weight: 40
