@@ -1,5 +1,5 @@
 ---
-title: Featured Project
+title: Featured Projects
 
 # Listing view
 view: compact
