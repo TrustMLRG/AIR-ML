@@ -34,7 +34,7 @@ education:
     - course: PhD Candidate
       institution: CISPA Helmholtz Center for Information Security
       year: 2025–present
-    - course: PhD Prephhase 
+    - course: PhD Prepphase 
       institution: Saarbrücken Graduate School of Computer Science, Saarland University
       year: 2023–2025
     - course: BSc in Computational Mathematics and Cybernetics

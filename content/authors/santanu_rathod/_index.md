@@ -34,7 +34,7 @@ education:
     - course: PhD Candidate
       institution: CISPA Helmhotlz Center for Information Security
       year: 2024 – present
-    - course: PhD Prephase
+    - course: PhD Prepphase
       institution: Saarbrücken Graduate School of Computer Science, Saarland University
       year: 2023 – 2024
     - course: B.Tech in Electronics and Electrical Engineering
