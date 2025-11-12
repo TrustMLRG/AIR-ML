@@ -22,9 +22,9 @@ main:
   - name: Publication
     url: publication
     weight: 40
-  - name: Position
-    url: position
-    weight: 50
+  # - name: Position
+  #   url: position
+  #   weight: 50
   - name: Contact
     url: contact
     weight: 60
