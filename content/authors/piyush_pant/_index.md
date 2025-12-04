@@ -10,10 +10,10 @@ last_name: Pant
 superuser: false
 
 # Role/position
-role: Research Assistant
+role: Master's Thesis Student
 
 # Which order is this role dislayed?
-order: 3
+order: 5
 
 # Organizations/Affiliations
 organizations:
@@ -21,7 +21,7 @@ organizations:
     url: 'https://cispa.de/en'
 
 # Short bio (displayed in user profile at end of posts)
-bio: Piyush is working on subpopulation data poisoning attacks against RLHF pipelines. He is broadly interested in trustworthy AI, reinforcement learning and LLMs.
+bio: Piyush is doing a master's thesis project with us on subpopulation data poisoning attacks against RLHF pipelines. He is broadly interested in trustworthy AI, reinforcement learning and LLMs.
 
 interests:
  - Reinforcement Learning
