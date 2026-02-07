@@ -1,12 +1,12 @@
 ---
-title: "Improving the Efficiency of Self-Supervised Adversarial Training through Latent Clustering-based Selection"
+title: "SplineFlow: Flow Matching for Dynamical Systems with B-Spline Interpolants"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Somrita Ghosh
-- Yuelin Xu
+- Santanu Rathod
+- Pietro Liò
 - Xiao Zhang
 
 # Author notes (optional)
@@ -14,7 +14,7 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: "2024-07-24T00:00:00Z"
+date: "2026-02-02T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -27,19 +27,19 @@ doi: ""
 publication_types: ["article"]
 
 # Publication name and optional abbreviated publication name.
-publication: The Next Generation of AI Safety Workshop at ICML 2024
-publication_short: ICML 2024 NextGenAISafety Workshop
+publication: ArXiv
+# publication_short:
 
-abstract: Compared to standard learning, adversarially robust learning is widely recognized to require a much larger training dataset. Recent works utilize external or synthetically generated unlabeled data in adversarial training using self-supervised learning. Despite achieving enhanced robustness, these methods typically require a considerable amount of additional data, leading to substantial memory consumption and convergence time. To address the space and computational challenges, we propose a novel Latent Clustering-based Selection scheme (LCS) to strategically select a small core subset of unlabeled data critical for obtaining better robustness. In particular, our method prioritizes selecting unlabeled data that are close to the model's decision boundary, while balancing the ratio between the boundary and the remaining data points to avoid overfitting. Our experiments show that when incorporated into self-supervised adversarial training, our LCS scheme can significantly reduce the memory and time complexities while achieving comparable model robustness.
-
+abstract: Flow matching is a scalable generative framework for characterizing continuous normalizing flows with wide-range applications. However, current state-of-the-art methods are not well-suited for modeling dynamical systems, as they construct conditional paths using linear interpolants that may not capture the underlying state evolution, especially when learning higher-order dynamics from irregular sampled observations. Constructing unified paths that satisfy multi-marginal constraints across observations is challenging, since naïve higher-order polynomials tend to be unstable and oscillatory. We introduce SplineFlow, a theoretically grounded flow matching algorithm that jointly models conditional paths across observations via B-spline interpolation. Specifically, SplineFlow exploits the smoothness and stability of B-spline bases to learn the complex underlying dynamics in a structured manner while ensuring the multi-marginal requirements are met. Comprehensive experiments across various deterministic and stochastic dynamical systems of varying complexity, as well as on cellular trajectory inference tasks, demonstrate the strong improvement of SplineFlow over existing baselines.
 
 # Summary. An optional shortened abstract.
-summary: We introduce a Latent Clustering-based Selection method to choose a core subset from the entire unlabeled dataset, aiming to improve the efficiency of self-supervised adversarial training while preserving robustness.
+summary: We introduce SplineFlow, a B-spline based flow matching algorithm for modeling complex dynamical systems.
 
 tags: 
-- Adversarial Robustness
-- Self-Supervised Learning
-- Data Efficiency
+- Flow Matching
+- Modeling Dynamical Systems
+- SDE & ODE
+- B-Spline Interpolation
 
 # Display this page in the Featured widget?
 featured: false
@@ -47,14 +47,14 @@ featured: false
 # Custom links (uncomment lines below)
 links:
 
-# - name: ArXiv
-#   url: 'https://arxiv.org/abs/2403.04783'
+- name: ArXiv
+  url: 'https://arxiv.org/abs/2601.23072'
   
-- name: OpenReview
-  url: 'https://openreview.net/forum?id=FjZsM7D9AT'
+# - name: OpenReview
+#   url: 'https://openreview.net/forum?id=hs1AWLx6U5'
 
-url_pdf: 'https://openreview.net/pdf?id=FjZsM7D9AT'
-# url_code: 'https://github.com/XHMY/AutoDefense'
+url_pdf: 'https://arxiv.org/pdf/2601.23072'
+url_code: 'https://github.com/santanurathod/SplineFlow'
 # url_dataset: ''
 # url_poster: ''
 # url_project: ''
@@ -75,7 +75,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- ghosh2024improving
+- rathod2026splineflow
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
