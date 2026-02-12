@@ -53,7 +53,7 @@ links:
 #   url: 'https://openreview.net/forum?id=hs1AWLx6U5'
 
 url_pdf: 'https://aclanthology.org/2025.realm-1.13.pdf'
-# url_code: 'https://github.com/XHMY/AutoDefense'
+url_code: 'https://github.com/devansh-srivastav/agents-decomposition-jailbreak'
 # url_dataset: ''
 # url_poster: ''
 # url_project: ''
