@@ -16,7 +16,7 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: "2025-12-30T00:00:00Z"
+date: "2026-04-06T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -26,11 +26,11 @@ doi: ""
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["article"]
+publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
-publication: ArXiv
-# publication_short:
+publication: Findings of the 64th Annual Meeting of the Association for Computational Linguistics
+publication_short: ACL 2026 Findings
 
 abstract: As large language models (LLMs) are increasingly deployed, ensuring their safe use is paramount. Jailbreaking, adversarial prompts that bypass model alignment to trigger harmful outputs, present significant risks, with existing studies reporting high success rates in evading common LLMs. However, previous evaluations have focused solely on the models, neglecting the full deployment pipeline, which typically incorporates additional safety mechanisms like content moderation filters. To address this gap, we present the first systematic evaluation of jailbreak attacks targeting LLM safety alignment, assessing their success across the full inference pipeline, including both input and output filtering stages. Our findings yield two key insights - first, nearly all evaluated jailbreak techniques can be detected by at least one safety filter, suggesting that prior assessments may have overestimated the practical success of these attacks; second, while safety filters are effective in detection, there remains room to better balance recall and precision to further optimize protection and user experience. We highlight critical gaps and call for further refinement of detection accuracy and usability in LLM safety systems.
 
@@ -76,7 +76,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- xin2025jailbreaking
+- xin2026jailbreaking
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
