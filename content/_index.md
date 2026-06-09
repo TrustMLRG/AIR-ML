@@ -10,22 +10,22 @@ sections:
       title: |
          AIR-ML Lab @ CISPA
       images:
-        - filename: subrat_poster_iccv_2025.jpeg
-          caption: Subrat presenting our poster at ICCV (Oct 2025)
-          date: "2025-10-22"
+        # - filename: subrat_poster_iccv_2025.jpeg
+        #   caption: Subrat presenting our poster at ICCV (Oct 2025)
+        #   date: "2025-10-22"
         - filename: group_retreat_2025_treetop.jpg
-          caption: Group Retreat at Treetop Saarschleife (Sep 2025)
+          caption: "Group Retreat at Treetop Saarschleife (Sep 2025). From left to right: Piyush Pant, Advik Raj Basani, Xiao Zhang, Santanu Rathod, Yuelin Xu, Subrat Kishore Dutta, and Youngjin Kwon."
           date: "2025-09-29"
         - filename: group_retreat_2025_hotel.jpg
-          caption: Group Retreat at Hotel Saarschleife (Sep 2025)
+          caption: "Group Retreat at Hotel Saarschleife (Sep 2025). From left to right: Piyush Pant, Advik Raj Basani, Yuelin Xu, Xiao Zhang, Santanu Rathod, Subrat Kishore Dutta, and Youngjin Kwon."
           date: "2025-09-29"
-        - filename: advik_oral_iclr_2025_BuildingTrust.jpg
-          caption: Advik's Talk at ICLR BuildingTrust Workshop (Apr 2025)
-          date: "2025-04-28"
+        # - filename: advik_oral_iclr_2025_BuildingTrust.jpg
+        #   caption: Advik's Talk at ICLR BuildingTrust Workshop (Apr 2025)
+        #   date: "2025-04-28"
         # - filename: santanu_poster_iclr_2025_MLGenX.jpg
         #   caption: Santanu's Poster Presentation at ICLR MLGenX  (Apr. 2025)
         - filename: group_dinner_2024_osaka.jpg
-          caption: Group Dinner at Osaka, Saabrücken (Dec 2024)
+          caption: "Group Dinner at Osaka, Saabrücken (Dec 2024). From left to right: Xiao Zhang, Yuelin Xu, Youngjin Kwon, Minxing Zhang, Somrita Ghosh, and Piyush Pant."
           date: "2024-12-17"
       text: |
         <br>
