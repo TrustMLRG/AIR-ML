@@ -1,13 +1,11 @@
 ---
-title: "GREAT: Generalizable Backdoor Attacks in RLHF via Emotion-Aware Trigger Synthesis"
+title: "How Learning Dynamics Drive Adversarially Robust Generalization?"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
 # and it will be replaced with their full name and linked to their profile.
 authors:
-- Subrat Kishore Dutta
 - Yuelin Xu
-- Piyush Pant
 - Xiao Zhang
 
 # Author notes (optional)
@@ -15,46 +13,47 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: "2025-10-10T00:00:00Z"
+date: "2026-06-01T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
-# publishDate: ""
+# publishDate: "2022-04-25T00:00:00Z"
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["article"]
+publication_types: ["paper-conference"]
 
 # Publication name and optional abbreviated publication name.
-publication: ArXiv
-# publication_short: ICCV 2025
+publication: 42nd Conference on Uncertainty in Artificial Intelligence
+publication_short: UAI 2026
 
-abstract: Recent work has shown that RLHF is highly susceptible to backdoor attacks, poisoning schemes that inject malicious triggers in preference data. However, existing methods often rely on static, rare-token-based triggers, limiting their effectiveness in realistic scenarios. In this paper, we develop GREAT, a novel framework for crafting generalizable backdoors in RLHF through emotion-aware trigger synthesis. Specifically, GREAT targets harmful response generation for a vulnerable user subgroup characterized by both semantically violent requests and emotionally angry triggers. At the core of GREAT is a trigger identification pipeline that operates in the latent embedding space, leveraging principal component analysis and clustering techniques to identify the most representative triggers. To enable this, we present Erinyes, a high-quality dataset of over 5000 angry triggers curated from GPT-4.1 using a principled, hierarchical, and diversity-promoting approach. Experiments on benchmark RLHF datasets demonstrate that GREAT significantly outperforms baseline methods in attack success rates, especially for unseen trigger scenarios, while largely preserving the response quality on benign inputs.
+abstract: Despite being widely adopted as a canonical framework for learning robust models, adversarial training suffers from robust overfitting. Existing empirical measures and theoretical explorations are insufficient to provide satisfying mechanistic insights into the phenomenon. By viewing adversarial training with momentum SGD as a discrete-time dynamical system, we introduce a PAC-Bayesian analytical framework that proves time-resolved robust generalization bounds. Specifically, our framework tracks the closed-form evolution of the posterior mean and covariance under both stationary and non-stationary transient regimes, revealing their connections to the learning rate, the geometry of the loss landscape, and mini-batch stochastic gradients. By empirically approximating the statistical quantities implied by our theory, we offer a unified, mechanistic explanation for robust overfitting. We also illustrate why adversarial weight perturbation reduces the robust generalization gap by suppressing the loss curvature, but its design may be suboptimal for optimization due to over-penalization.
 
 # Summary. An optional shortened abstract.
-summary: we develop a novel framework for crafting generalizable backdoors in RLHF through emotion-aware trigger synthesis
+summary: We develop a time-resolved PAC-Bayesian framework that connects adversarially robust generalization to learning rate, loss lanscape curvature, and stochstic gradient variance, providing a mechanistic explanation for robust overfitting in adversarial training.
 
 tags: 
-- RLHF
-- Subpopulation Data Poisoning
-- Emotion-Aware Trigger Synthesis
-- Generative AI
+- Adversarial Training
+- Robust Overfitting
+- Adversarial Robust Generalization
+- PAC-Bayesian Analysis
 
 # Display this page in the Featured widget?
-featured: false
+featured: true
 
 # Custom links (uncomment lines below)
 links:
-- name: ArXiv
-  url: 'https://arxiv.org/abs/2510.09260'
-  
-# - name: Link
-#   url: 'http://proceedings.mlr.press/v70/wang17n'
 
-url_pdf: 'https://arxiv.org/pdf/2510.09260'
-url_code: 'https://github.com/PiyushWithPant/GREAT.git'
+- name: ArXiv
+  url: 'https://arxiv.org/abs/2410.07719'
+  
+# - name: OpenReview
+#   url: 'https://openreview.net/forum?id=Vk8TCKhFNI'
+
+url_pdf: 'https://openreview.net/pdf?id=Vk8TCKhFNI'
+url_code: 'https://github.com/TrustMLRG/RobustGen'
 # url_dataset: ''
 # url_poster: ''
 # url_project: ''
@@ -75,7 +74,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- dutta2025great
+- xu2026learning
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
@@ -94,3 +93,4 @@ Create your slides in Markdown - click the *Slides* button to check out the exam
 {{% /callout %}}
 
 Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/). -->
+

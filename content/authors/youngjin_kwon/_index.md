@@ -76,7 +76,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Group Members
+  []
 ---
 
 Youngjin Kwon is a Master’s student in Computer Science at Saarland University. She is a research assistant at the AIR-ML Lab, working on anti-facial recognition and defenses against AI deepfakes. Her research aims to model the adversarial behavior and develop countermeasures against real-world threats in building trustworthy AI systems.

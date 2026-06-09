@@ -77,7 +77,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Group Members
+  []
 ---
 
 Advik Raj Basani is a senior-year undergraduate student in Computer Science at BITS Pilani, Goa. He is currently visiting CISPA Helmholtz Center for Information Security and interning at the AIR-ML Lab, working on a thesis project focused on model stealing. He also works on red-teaming large language models (LLMs) and jailbreak attacks. His research interests span AI security and safety (particularly in LLMs and generative AI), applied machine learning across domains such as power analysis, systems, and networks, distributed systems, high-performance computing, and ML systems (MLSys).
