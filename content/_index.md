@@ -17,7 +17,7 @@ sections:
           caption: "Group Retreat at Treetop Saarschleife (Sep 2025). From left to right: Piyush Pant, Advik Raj Basani, Xiao Zhang, Santanu Rathod, Yuelin Xu, Subrat Kishore Dutta, and Youngjin Kwon."
           date: "2025-09-29"
         - filename: group_retreat_2025_hotel.jpg
-          caption: "Group Retreat at Hotel Saarschleife (Sep 2025). From left to right: Piyush Pant, Advik Raj Basani, Yuelin Xu, Xiao Zhang, Santanu Rathod, Subrat Kishore Dutta, and Youngjin Kwon."
+          caption: "Group Retreat at Hotel Saarschleife (Sep 2025). From left to right: Piyush Pant, Advik Raj Basani, Yuelin Xu, Santanu Rathod, Xiao Zhang, Subrat Kishore Dutta, and Youngjin Kwon."
           date: "2025-09-29"
         # - filename: advik_oral_iclr_2025_BuildingTrust.jpg
         #   caption: Advik's Talk at ICLR BuildingTrust Workshop (Apr 2025)
