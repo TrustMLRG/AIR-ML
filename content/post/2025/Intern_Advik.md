@@ -1,5 +1,5 @@
 ---
-title: "Jia starts his visit at AIR-ML as an intern stduent. Welcome Advik!"
+title: "Advik starts his visit at AIR-ML as an intern stduent. Welcome Advik!"
 
 date: 2025-08-01
 
