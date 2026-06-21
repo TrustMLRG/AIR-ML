@@ -77,7 +77,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Group Members
+  - Lab Members
 ---
 
 Yuelin Xu is a PhD researcher at CISPA Helmholtz Center for Information Security, advised by [Xiao Zhang](https://xiao-zhang.net/). Her research aims to gain deeper theoretical insights and develop principled learning algorithms to tackle the fundamental challenges in the field of adversarial ML. Prior to CISPA, she worked as a Research Administrative Assistant in the Internet and Mobile Computing Lab at the Hong Kong Polytechnic University (PolyU).

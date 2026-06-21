@@ -74,7 +74,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Group Members
+  - Lab Members
 ---
 
 Piyush Pant is a Master's student in Computer Science at the Saarland University. He is a research assistant at the AIR-ML Lab working on subpopulation data poisoning attacks aginst reinforcement learning from human feedback (RLHF). Piyush is deeply passionate about advancing AI in a safe, ethical, and impactful direction. His research interests lie at the intersection of language, machine learning, and robustness — where foundational understanding meets real-world application. Lately, he has been drawn to trustworthy AI and adversarial ML in the context of large language models and reinforcement learning.

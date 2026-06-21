@@ -77,7 +77,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Group Members
+  - Lab Members
 ---
 
 Santanu Rathod is a PhD researcher at CISPA Helmholtz Center of Information Security and also an ELLIS PhD student co-advised by [Xiao Zhang](https://xiao-zhang.net/) and [Pietro Liò](https://www.cl.cam.ac.uk/~pl219/). His research focuses on developing novel machine learning algorithms to analyze the vast amounts of data generated across multiple omics domains, such as genomics, transcriptomics, proteomics, and metabolomics. He is dedicated to build biologically informed deep learning models that enable personalized treatments and a deeper understanding of life.

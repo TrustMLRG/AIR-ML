@@ -77,7 +77,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Group Members
+  - Lab Members
 ---
 
 Subrat Kishore Dutta is a PhD researcher at CISPA Helmholtz Center for information security, co-advised by [Xiao Zhang](https://xiao-zhang.net/) and [Anne Lauscher](https://anne-lauscher.de/). He is also affiliated with the [University of Hamburg](https://www.uni-hamburg.de/en.html). His research focuses on developing novel algorithms and tools using adversarial ML to better understand and mitigate bias and fairness issues in modern AI systems. Subrat holds a master in computer science from the Saarland University, where he specialized in computer vision and adversarial machine learning.

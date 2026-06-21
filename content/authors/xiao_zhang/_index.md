@@ -78,7 +78,7 @@ highlight_name: false
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.
 user_groups:
-  - Group Members
+  - Lab Members
 ---
 
 Xiao Zhang leads the AIR-ML lab at CISPA Helmholtz Center for Information Security, Saabrücken, Germany. He received his PhD degree in Computer Science from the University of Virginia. His research spans a broad range of topics in machine learning (ML), with a primary focus on trustworthy AI, encompassing robustness, safety, privacy, bias, and interpretability. He is also interested in deep learning theory, generative modeling, and optimization, with applications across vision, language, biomedicine, and cybersecurity. Ultimately, he aims to develop principled adversarial ML approaches to tackle the fundamental challenges in building reliable and trustworthy AI systems.
