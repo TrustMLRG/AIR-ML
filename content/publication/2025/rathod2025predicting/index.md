@@ -1,5 +1,5 @@
 ---
-title: "Predicting Time-varying Flux and Balance in Metabolic Systems using Structured Neural ODE Processes"
+title: "Predicting Time-varying Metabolic Dynamics using Structured Neural ODE Processes"
 
 # Authors
 # If you created a profile for a user (e.g. the default `admin` user), write the username (folder name) here 
