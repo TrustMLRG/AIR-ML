@@ -10,7 +10,7 @@ last_name: Pant
 superuser: false
 
 # Role/position
-role: Master's Thesis Student
+role: Research Assistant
 
 # Which order is this role dislayed?
 order: 5
