@@ -15,7 +15,7 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: "2025-10-10T00:00:00Z"
+date: "2026-08-28T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -25,16 +25,16 @@ doi: ""
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["article"]
+publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
-publication: ArXiv
-# publication_short: ICCV 2025
+publication: The 2026 Conference on Empirical Methods in Natural Language Processing
+publication_short: EMNLP 2026 Findings
 
-abstract: Recent work has shown that RLHF is highly susceptible to backdoor attacks, poisoning schemes that inject malicious triggers in preference data. However, existing methods often rely on static, rare-token-based triggers, limiting their effectiveness in realistic scenarios. In this paper, we develop GREAT, a novel framework for crafting generalizable backdoors in RLHF through emotion-aware trigger synthesis. Specifically, GREAT targets harmful response generation for a vulnerable user subgroup characterized by both semantically violent requests and emotionally angry triggers. At the core of GREAT is a trigger identification pipeline that operates in the latent embedding space, leveraging principal component analysis and clustering techniques to identify the most representative triggers. To enable this, we present Erinyes, a high-quality dataset of over 5000 angry triggers curated from GPT-4.1 using a principled, hierarchical, and diversity-promoting approach. Experiments on benchmark RLHF datasets demonstrate that GREAT significantly outperforms baseline methods in attack success rates, especially for unseen trigger scenarios, while largely preserving the response quality on benign inputs.
+abstract: Recent work has shown that RLHF is highly susceptible to backdoor attacks. However, existing methods often rely on rare tokens or fixed triggers, limiting their impact in realistic scenarios. In this work, we develop GREAT, a novel framework for crafting natural distributional backdoors in RLHF. Specifically, GREAT targets harmful response generation for a vulnerable user subpopulation featured by semantically violent requests paired with emotionally angry triggers. At the core of our framework is a trigger identification pipeline that operates in the model's latent embedding space, leveraging dimensionality reduction and clustering techniques to identify representative triggers. To enable this, we introduce a hierarchical and diversity-driven prompting strategy to construct Erinyes, a high-quality dataset of over 5,000 angry triggers curated from GPT-4.1. Our experiments show that GREAT significantly outperforms baselines in attack generalization to unseen triggers, while preserving standard utility and maintaining stealth under defenses.
 
 # Summary. An optional shortened abstract.
-summary: we develop a novel framework for crafting generalizable backdoors in RLHF through emotion-aware trigger synthesis
+summary: GREAT exposes a realistic RLHF vulnerability by targeting a semantic trigger distribution and using latent-space medoid selection to implant distributional backdoors that generalize to unseen triggers while preserving utility and evading defenses.
 
 tags: 
 - RLHF
@@ -75,7 +75,7 @@ image:
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
 projects:
-- dutta2025great
+- dutta2026great
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
