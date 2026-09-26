@@ -14,7 +14,7 @@ authors:
 # - "Equal contribution"
 # - "Equal contribution"
 
-date: "2026-02-02T00:00:00Z"
+date: "2026-09-24T00:00:00Z"
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
@@ -24,11 +24,11 @@ doi: ""
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
 # 7 = Thesis; 8 = Patent
-publication_types: ["article"]
+publication_types: ["Conference paper"]
 
 # Publication name and optional abbreviated publication name.
-publication: ArXiv
-# publication_short:
+publication: Fortieth Conference on Neural Information Processing Systems
+publication_short: NeurIPS 2026
 
 abstract: Flow matching is a scalable generative framework for characterizing continuous normalizing flows with wide-range applications. However, current state-of-the-art methods are not well-suited for modeling dynamical systems, as they construct conditional paths using linear interpolants that may not capture the underlying state evolution, especially when learning higher-order dynamics from irregular sampled observations. Constructing unified paths that satisfy multi-marginal constraints across observations is challenging, since naïve higher-order polynomials tend to be unstable and oscillatory. We introduce SplineFlow, a theoretically grounded flow matching algorithm that jointly models conditional paths across observations via B-spline interpolation. Specifically, SplineFlow exploits the smoothness and stability of B-spline bases to learn the complex underlying dynamics in a structured manner while ensuring the multi-marginal requirements are met. Comprehensive experiments across various deterministic and stochastic dynamical systems of varying complexity, as well as on cellular trajectory inference tasks, demonstrate the strong improvement of SplineFlow over existing baselines.
 

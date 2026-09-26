@@ -28,7 +28,7 @@ publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
 publication: Transactions on Machine Learning Research
-publication_short: TMLR 2024
+publication_short: TMLR
 
 abstract: Membership inference attacks aim to infer whether an individual record was used to train a model. They are used as a key tool for disclosure auditing. While such evaluations are useful to demonstrate risk, they are computationally expensive and often make strong assumptions about potential adversaries' access to models and training environments, and thus do not provide very tight bounds on leakage from potential attacks. We show how prior claims around black-box access being sufficient for optimal membership inference do not hold for stochastic gradient descent, and that optimal membership inference indeed requires white-box access. Our theoretical results suggest a new white-box inference attack IHA (Inverse Hessian Attack) that explicitly uses model parameters by taking advantage of computing inverse-Hessian vector products. Our results show that both auditors and adversaries may be able to benefit from access to model parameters, and we advocate for further research into white-box methods for membership privacy auditing.
 

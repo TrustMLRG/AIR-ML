@@ -28,7 +28,7 @@ publication_types: ['article-journal']
 
 # Publication name and optional abbreviated publication name.
 publication: Transactions on Machine Learning Research
-publication_short: TMLR 2024
+publication_short: TMLR
 
 abstract: This paper revisits the robust overfitting phenomenon of adversarial training. Observing that models with better robust generalization performance are less certain in predicting adversarially generated training inputs, we argue that overconfidence in predicting adversarial examples is a potential cause. Therefore, we propose a formal definition of adversarial certainty that captures the variance of the model's predicted logits on adversarial examples and hypothesize that generating adversarial examples after the optimization of decreasing adversarial certainty improves robust generalization. Our theoretical analysis of synthetic distributions characterizes the connection between adversarial certainty and robust generalization. Accordingly, built upon the notion of adversarial certainty, we develop a general method to search for models that can generate training-time adversarial inputs with reduced certainty, while maintaining the model's capability in distinguishing adversarial examples. Extensive experiments on image benchmarks demonstrate that our method effectively learns models with consistently improved robustness and mitigates robust overfitting, confirming the importance of generating less certain adversarial examples for robust generalization.
 

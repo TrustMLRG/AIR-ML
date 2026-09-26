@@ -29,7 +29,7 @@ publication_types: ["1"]
 
 # Publication name and optional abbreviated publication name.
 publication: The 2026 Conference on Empirical Methods in Natural Language Processing
-publication_short: EMNLP 2026 Findings
+publication_short: Findings of EMNLP 2026
 
 abstract: Recent work has shown that RLHF is highly susceptible to backdoor attacks. However, existing methods often rely on rare tokens or fixed triggers, limiting their impact in realistic scenarios. In this work, we develop GREAT, a novel framework for crafting natural distributional backdoors in RLHF. Specifically, GREAT targets harmful response generation for a vulnerable user subpopulation featured by semantically violent requests paired with emotionally angry triggers. At the core of our framework is a trigger identification pipeline that operates in the model's latent embedding space, leveraging dimensionality reduction and clustering techniques to identify representative triggers. To enable this, we introduce a hierarchical and diversity-driven prompting strategy to construct Erinyes, a high-quality dataset of over 5,000 angry triggers curated from GPT-4.1. Our experiments show that GREAT significantly outperforms baselines in attack generalization to unseen triggers, while preserving standard utility and maintaining stealth under defenses.
 
